@@ -10,7 +10,7 @@ contract errorcontract {
     }
 
     function assertExample(uint256 _input) public pure returns (uint256) {
-        assert(_input != 0);
+        assert(_input != 2);
         return _input * 2;
     }
 
