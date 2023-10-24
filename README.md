@@ -10,7 +10,7 @@ Sets a new value, but only if the `_newValue` is greater than the current value.
 
 ### `assertExample(uint256 _input)`
 
-Takes an input and doubles it, but only if the input is not zero. If the input is zero, it will trigger an internal error using `assert()`.
+Takes an input and doubles it, but only if the input is not two. If the input is two, it will trigger an internal error using `assert()`.
 
 ### `revertExample(uint256 a, uint256 b)`
 
