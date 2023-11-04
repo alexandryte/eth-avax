@@ -1,25 +1,17 @@
-# Error Contracts
+# SimpleToken Smart Contract
 
-This is a simple Ethereum smart contract written in Solidity. It demonstrates the use of `require()`, `assert()`, and `revert()` statements.
+This is a simple Ethereum token contract written in Solidity.
 
-## Functions
+## Overview
 
-### `setValue(uint256 _newValue)`
+- **Name:** SimpleToken
+- **Symbol:** [SYMBOL]
+- **Decimals:** [DECIMALS]
 
-Sets a new value, but only if the `_newValue` is greater than the current value. If the condition is not met, it will throw an exception with the specified error message.
+## Description
 
-### `assertExample(uint256 _input)`
+The `SimpleToken` contract implements a basic ERC20 token with the following functionalities:
 
-Takes an input and doubles it, but only if the input is not two. If the input is two, it will trigger an internal error using `assert()`.
-
-### `revertExample(uint256 a, uint256 b)`
-
-Takes two parameters `a` and `b`. If `a` is equal to `b`, the function will revert the transaction with the specified error message. If the condition is not met, the function will return "Transaction successful".
-
-## Usage
-
-1. Install a Solidity compiler (e.g., Remix, Truffle) to compile and deploy the smart contract.
-
-2. Deploy the contract on an Ethereum testnet or the main network.
-
-3. Interact with the contract using a web3-enabled application or a tool like Remix.
+- `transfer`: Allows users to transfer tokens to another address.
+- `mint`: Allows the contract owner to mint new tokens and allocate them to a specific address.
+- `burn`: Allows users to burn (destroy) their own tokens.
